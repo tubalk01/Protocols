@@ -30,11 +30,11 @@ Using the customization fields below, set up your protocol as follows:
 
 -- **Elution Volume:** Specify the final volume to elute the purified nucleic acid. **The Opentrons MagDeck supports elution volumes above 10 µL.**
 
-- **Incubation Time:** Specify the amount of time (in minutes) that the bead solution and input sample interact.
+-- **Incubation Time:** Specify the amount of time (in minutes) that the bead solution and input sample interact.
 
-- **Settling Time:** Specify the amount of time needed to pellet the beads. **Higher volumes may require a longer settling time to pellet beads.**
+-- **Settling Time:** Specify the amount of time needed to pellet the beads. **Higher volumes may require a longer settling time to pellet beads.**
 
-- **Drying Time:** Specify the drying time needed after wash steps.
+-- **Drying Time:** Specify the drying time needed after wash steps.
 
 ---
 

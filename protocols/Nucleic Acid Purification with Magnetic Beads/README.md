@@ -16,7 +16,9 @@ While we have reagent recommendations in the **Materials Neeeded** section below
 
 ---
 
-***Setup***
+
+
+![Setup](https://s3.amazonaws.com/opentrons-protocol-library-website/custom-README-images/Nucleic+Acid+Purification/Setup.png)
 
 Using the customization fields below, set up your protocol as follows:
 

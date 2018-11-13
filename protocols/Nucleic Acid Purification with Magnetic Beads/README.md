@@ -8,25 +8,33 @@
     * Nucleic Acid Purification
 
 ## Description
-With this protocol, you can perform high-quality nucleic acid purifcations using magnetic beads and the [Opentrons Magnetic Module](https://shop.opentrons.com/products/magdeck?_ga=2.120183432.1039841802.1542049668-403439593.1535387376). With this setup, you can get high quality PCR product and other nucleic acids without the use of centrifugation or vacuum separation. Here is our [Technical Note](INSERT LINK).
+With this protocol, you can perform high-quality nucleic acid purifcations using magnetic beads and the [Opentrons Magnetic Module](https://shop.opentrons.com/products/magdeck?_ga=2.120183432.1039841802.1542049668-403439593.1535387376). This setup yields high quality PCR product and other nucleic acids without the use of centrifugation or vacuum separation. You can also use this for NGS library cleanup steps.
+
+While we have reagent recommendations in the **Materials Neeeded** section below, you can use any [SPRI magnetic beads](https://bitesizebio.com/13580/solid-phase-reversible-immobilization-how-to-get-a-bead-on-the-clean-up-of-your-ngs-libraries/) you prefer. For more detailed information on how to use this protocol, please see our [Technical Note](INSERT LINK).
 
 ---
 
 ---
 
-***Example Setup***
+***Setup***
 
-- Pipette and Mount : Specify the pipette and mount, left or right, for your protocol. We recommend the p50 and p300 single or multi-channel pipettes for the volumes of reagents in this experiment. 
-- Sample number: Users can customize the number of samples to run per protocol. We recommend multiples of 8 if you are using a multi-channel pipette. 
-- Sample volume: The starting volume of the input sample can be customized. We recommend volumes about 10 µL. 
-- Bead Ratio: The ratio of beads can be customized for left or right side size-selection of fragments. The default bead ratio is 1.8x the input sample volume. 
-- Elution Volume: Users can choose the final volume to elute the purified nucleic acid. The Opentrons MagDeck supports elution volumes above 10 µL. 
+Using the customization fields below, set up your protocol as follows:
 
-**Advanced Parameters**
-- Incubation Time: The incubation time is the amount of time that the bead solution and input sample interact. The default incubation time is 5 minutes.
-- Settling Time: This parameter allows the beads to pellet for specified amount of time. Higher volumes may require a longer settling time to pellet beads. The default settling time is 2 minutes.
-- Drying Time: The drying time after the wash steps can vary depending on your bead products.
+-- **Pipette and Mount:** Specify your pipette and mount (left or right). **We recommend the p50 and p300 single or multi-channel pipettes for the volumes of reagents in this experiment.** 
 
+-- **Sample number:** Customize the number of samples to run per protocol. **We recommend multiples of 8 if you are using a multi-channel pipette.**
+
+-- **Sample volume:** Specify the starting volume of the input sample. **We recommend volumes about 10 µL.** 
+
+-- **Bead Ratio:** Customize the ratio of beads for left or right side size-selection of fragments. The default bead ratio is **1.8x the input sample volume.**
+
+-- **Elution Volume:** Specify the final volume to elute the purified nucleic acid. **The Opentrons MagDeck supports elution volumes above 10 µL.**
+
+- **Incubation Time:** Specify the amount of time (in minutes) that the bead solution and input sample interact.
+
+- **Settling Time:** Specify the amount of time needed to pellet the beads. **Higher volumes may require a longer settling time to pellet beads.**
+
+- **Drying Time:** Specify the drying time needed after wash steps.
 
 ---
 
@@ -57,9 +65,9 @@ With this protocol, you can perform high-quality nucleic acid purifcations using
 2. 
 
 ###### Internal
-Customizable Serial Dilution, v1
+Nucleic Acid Purification, v1
 
 ### Additional Notes
 Please reference our [Technical Note]() for more information about the expected output of this protocol, in addition to expanded sample data from the Opentrons lab. 
 
-We understand that there are limitations to the use of this protocol, and we plan to make improvements soon. In the meantime, if you'd like to request a more complex dilution workflow, please use our [Protocol Development Request Form](https://opentrons-protocol-dev.paperform.co/). You can also download this Python file and modify it using our [API Documentation](https://docs.opentrons.com/). For additional questions about this protocol, please email support@opentrons.com.
+We understand that there are limitations to the use of this protocol and we plan to make improvements soon! In the meantime, if you'd like to request a more complex purification workflow, please use our [Protocol Development Request Form](https://opentrons-protocol-dev.paperform.co/). You can also download the Python file from this page and modify it using our [API Documentation](https://docs.opentrons.com/). For additional questions about this protocol, please email support@opentrons.com.

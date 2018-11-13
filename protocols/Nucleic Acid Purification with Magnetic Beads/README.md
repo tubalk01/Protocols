@@ -8,7 +8,7 @@
     * Nucleic Acid Purification
 
 ## Description
-With this protocol, you can use magnetic beads and the [Opentrons Magnetic Module]() to perform purifications of PCR products and other nucleic acids that yield high quality sample without the use of centrifugation or vacuum separation. Here is our [Technical Note](https://docs.google.com/document/d/1cwSAS52fSBOEI0Hb7U2paq5jS_G1LN2fB5TssJp-Au0/edit?usp=sharing).
+With this protocol, you can perform high-quality nucleic acid purifcations using magnetic beads and the [Opentrons Magnetic Module](https://shop.opentrons.com/products/magdeck?_ga=2.120183432.1039841802.1542049668-403439593.1535387376). With this setup, you can get high quality PCR product and other nucleic acids without the use of centrifugation or vacuum separation. Here is our [Technical Note](INSERT LINK).
 
 ---
 

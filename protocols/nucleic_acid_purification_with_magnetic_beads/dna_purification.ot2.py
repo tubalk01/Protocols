@@ -7,18 +7,18 @@ output_plate = labware.load('PCR-strip-tall', '2')
 
 
 def run_custom_protocol(
-        sample_number: int=24,
-        incubation_time: float=1,
-        settling_time: float=1,
         pipette_type: StringSelection(
             'p10_Single', 'p50_Single', 'p300_Single', 'p1000_Single',
             'p10_Multi', 'p50_Multi', 'p300_Multi', 'p1000_Multi'
             )='p300_Multi',
-        pipette_axis: StringSelection('left', 'right')='left',
-        PCR_volume: float=20,
+        pipette_mount: StringSelection('left', 'right')='left',
+        sample_number: int=24,
+        sample_volume: float=20,
         bead_ratio: float=1.8,
-        dry_time: float=5,
-        elution_buffer_volume: float=200):
+        elution_buffer_volume: float=200,
+        incubation_time: float=1,
+        settling_time: float=1,
+        drying_time: float=5):
 
     total_tips = sample_number*8
     tiprack_num = total_tips//96 + (1 if total_tips % 96 > 0 else 0)
@@ -26,37 +26,37 @@ def run_custom_protocol(
     if pipette_type == 'p1000_Single':
         tipracks = [labware.load('tiprack-1000ul', slot) for slot in slots]
         pipette = instruments.P1000_Single(
-            mount=pipette_axis,
+            mount=pipette_mount,
             tip_racks=tipracks)
     elif pipette_type == 'p300_Single':
         tipracks = [labware.load('tiprack-200ul', slot) for slot in slots]
         pipette = instruments.P300_Single(
-            mount=pipette_axis,
+            mount=pipette_mount,
             tip_racks=tipracks)
     elif pipette_type == 'p50_Single':
         tipracks = [labware.load('tiprack-200ul', slot) for slot in slots]
         pipette = instruments.P50_Single(
-            mount=pipette_axis,
+            mount=pipette_mount,
             tip_racks=tipracks)
     elif pipette_type == 'p10_Single':
         tipracks = [labware.load('tiprack-10ul', slot) for slot in slots]
         pipette = instruments.P10_Single(
-            mount=pipette_axis,
+            mount=pipette_mount,
             tip_racks=tipracks)
     elif pipette_type == 'p10_Multi':
         tipracks = [labware.load('tiprack-10ul', slot) for slot in slots]
         pipette = instruments.P10_Multi(
-            mount=pipette_axis,
+            mount=pipette_mount,
             tip_racks=tipracks)
     elif pipette_type == 'p50_Multi':
         tipracks = [labware.load('tiprack-200ul', slot) for slot in slots]
         pipette = instruments.P50_Multi(
-            mount=pipette_axis,
+            mount=pipette_mount,
             tip_racks=tipracks)
     elif pipette_type == 'p300_Multi':
         tipracks = [labware.load('tiprack-200ul', slot) for slot in slots]
         pipette = instruments.P300_Multi(
-            mount=pipette_axis,
+            mount=pipette_mount,
             tip_racks=tipracks)
 
     mode = pipette_type.split('_')[1]
@@ -83,12 +83,12 @@ def run_custom_protocol(
     elution_buffer = reagent_container.wells(2)
 
     # Define bead and mix volume
-    bead_volume = PCR_volume*bead_ratio
+    bead_volume = sample_volume*bead_ratio
     if bead_volume/2 > pipette.max_volume:
         mix_vol = pipette.max_volume
     else:
         mix_vol = bead_volume/2
-    total_vol = bead_volume + PCR_volume + 5
+    total_vol = bead_volume + sample_volume + 5
 
     # Mix beads and PCR samples
     for target in samples:
@@ -122,7 +122,7 @@ def run_custom_protocol(
             pipette.transfer(200, target, liquid_waste, air_gap=air_vol)
 
     # Dry at RT
-    pipette.delay(minutes=dry_time)
+    pipette.delay(minutes=drying_time)
 
     # Disengage MagDeck
     mag_deck.disengage()

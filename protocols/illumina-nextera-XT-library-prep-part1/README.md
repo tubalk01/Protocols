@@ -20,11 +20,7 @@ Links:
 
 With this protocol, your OT-2 can perform the Nextera XT DNA Library Prep Kit protocol described by the [Illumina Reference Guide](https://support.illumina.com/content/dam/illumina-support/documents/documentation/chemistry_documentation/samplepreps_nextera/nextera-xt/nextera-xt-library-prep-reference-guide-15031942-03.pdf). 
 
-This is part 1 of the protocol, which includes the following steps: 
-
-1. Tagment Genomic DNA 
-2. Amplify Libraries. 
-
+This is part 1 of the protocol, which includes the following steps: (1) Tagment Genomic DNA and (2) Amplify Libraries. 
 The Tagmentation step uses Nextera transposase to fragment DNA into sizes suitable for sequencing, and then tags the DNA with adapter sequences. The library amplification step increases the yield of the tagmented DNA using PCR. PCR adds the Index 1 (i7), Index 2 (i5), and full adapter sequences to the tagmented DNA from the previous step. 
 
 **NOTE:** This protocol assumes you are taking your plate off the OT-2 and thermocycling on a stand-alone PCR machine according to the [Illumina Reference Guide](https://support.illumina.com/content/dam/illumina-support/documents/documentation/chemistry_documentation/samplepreps_nextera/nextera-xt/nextera-xt-library-prep-reference-guide-15031942-03.pdf). 

@@ -25,10 +25,10 @@ Using the customization fields below, set up your protocol as follows:
    * **Pipette Mount:** Specify which mount (left or right) your pipette is on.
    * **Sample number:** Customize the number of samples to run per protocol. A multiple of 8 is recommended when you are using a multichannel pipette.
    * **Sample volume:** Specify the starting volume (in uL) of the input sample.
-   * **Bead Ratio:** Customize the ratio of beads for left or right side size-selection of fragments. The default bead ratio is **1.8x the input sample volume.**
-   * **Elution Volume:** Specify the final volume (in uL) to elute the purified nucleic acid. **The Opentrons MagDeck supports elution volumes above 10 µL.**
+   * **Bead Ratio:** Customize the ratio of beads for left or right side size-selection of fragments. *The default bead ratio is 1.8x the input sample volume.*
+   * **Elution Volume:** Specify the final volume (in uL) to elute the purified nucleic acid. *The Opentrons MagDeck supports elution volumes above 10 µL.*
    * **Incubation Time:** Specify the amount of time (in minutes) that the bead solution and input sample interact.
-   * **Settling Time:** Specify the amount of time (in minutes) needed to pellet the beads. **Higher volumes may require a longer settling time.**
+   * **Settling Time:** Specify the amount of time (in minutes) needed to pellet the beads. *Higher volumes may require a longer settling time.*
    * **Drying Time:** Specify the drying time (in minutes) needed after wash steps.
 
 ---

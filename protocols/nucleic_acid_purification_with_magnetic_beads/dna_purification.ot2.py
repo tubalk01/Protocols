@@ -3,7 +3,7 @@ from otcustomizers import StringSelection
 
 mag_deck = modules.load('magdeck', '1')
 mag_plate = labware.load('biorad-hardshell-96-PCR', '1', share=True)
-output_plate = labware.load('PCR-strip-tall', '2')
+output_plate = labware.load('biorad-hardshell-96-PCR', '2')
 
 
 def run_custom_protocol(

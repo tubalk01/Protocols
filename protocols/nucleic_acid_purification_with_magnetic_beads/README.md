@@ -50,7 +50,7 @@ Using the customization fields below, set up your protocol as follows:
 
 -- [BioRad HardShell 96-Well PCR Plate](http://www.bio-rad.com/en-us/sku/hsp9601-hard-shell-96-well-pcr-plates-low-profile-thin-wall-skirted-white-clear?ID=hsp9601)
 
--- Magnetic Beads (We Recommend [Omega Biotek Mag-Bing TotalPure NGS](http://omegabiotek.com/store/product/mag-bind-totalpure-ngs/)
+-- Magnetic Beads (We Recommend [Omega Biotek Mag-Bind TotalPure NGS](http://omegabiotek.com/store/product/mag-bind-totalpure-ngs/)
 
 -- 70% Ethanol 
 

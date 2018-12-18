@@ -1,8 +1,5 @@
 # Nucleic Acid Purification with Omega Bio-tek Mag-Bind® TotalPure NGS
 
-### Author
-![Opentrons](https://s3.amazonaws.com/opentrons-protocol-library-website/custom-README-images/001-General+Headings/Opentrons+Logo.png)
-
 ### Partner
 ![Omega Bio-tek](https://s3.amazonaws.com/opentrons-protocol-library-website/custom-README-images/001-General+Headings/Omega+Logo.png)
 

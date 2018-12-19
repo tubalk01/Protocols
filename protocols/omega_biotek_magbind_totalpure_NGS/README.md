@@ -7,8 +7,8 @@
 [Omega Bio-tek](http://omegabiotek.com/store/)
 
 ## Categories
-* Molecular Biology
-    * Nucleic Acid Purification
+* Library Prep
+    * NGS Cleanup and Size Selection
         * Omega Bio-tek Mag-Bind® TotalPure NGS
 
 ## Description

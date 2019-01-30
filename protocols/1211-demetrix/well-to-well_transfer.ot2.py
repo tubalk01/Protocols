@@ -11,10 +11,12 @@ Slot,Plate Type,Container Height,Well Depth
 5,384-plate,,
 """
 
+# Kevin change
+
 transfer_csv_example = """
 Source Slot,Source Well,Dest Slot,Dest Well,Volume
 1,A1,4,A11,1
-2,B1,5,A5,3
+2,B1,5,A5,2
 3,A12,5,H12,7
 """
 
